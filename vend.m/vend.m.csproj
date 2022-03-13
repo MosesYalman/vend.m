@@ -10,8 +10,4 @@
     <None Include="Vending.M\VendingMachine.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Product\Models\" />
-  </ItemGroup>
-
 </Project>
