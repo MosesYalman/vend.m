@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using product;
-using VendingMachine.Interface;
+using Vending.M.Interface;
 
 namespace Vending.M.Data
 {
