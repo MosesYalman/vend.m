@@ -8,9 +8,13 @@ namespace Vending.M.Interface
     interface Ivending
     {
         Product Purchase();
+
         List<string> ShowAll();
+
         String Details(Product product);
+
         void InsertMoney();
+
         int EndTransaction();
     }
 }

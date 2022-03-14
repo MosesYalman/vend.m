@@ -5,18 +5,24 @@ using System.Text;
 namespace Vending.M
 {
     class Till
+
+
     {
 
         private static int[] denotations = new int[] { 1, 5, 10, 20, 50, 100, 500, 1000 };
+        
         private int[] change = new int[denotations.Length];
 
 
         public int Increase(int index)
+
         {
             ++change[index];
             return 1;
         }
         public int Decrease(int index)
+
+
         {
             return (((change[index]--) >= 1) ? 1 : 0);
         }
@@ -24,8 +30,11 @@ namespace Vending.M
         public int GetSaldo()
         {
             return GetSaldoFromArray(change);
+
         }
 
+        
+        
         private int GetSaldoFromArray(int[] tillArray) 
         {
             int saldo = 0;
@@ -34,6 +43,8 @@ namespace Vending.M
                 saldo += denotations[denotation] * tillArray[denotation];
             }
             return saldo;
+
+
         }
         public int[] withDraw(int sum)
         {
@@ -50,6 +61,7 @@ namespace Vending.M
                 }
             }
             return payOut;
+
         }
         public int refillChange(int[] newChange)
         {
@@ -59,6 +71,7 @@ namespace Vending.M
                 change[index] += newChange[index];
             }
             return GetSaldoFromArray(newChange);
+
         }
     }
 }
